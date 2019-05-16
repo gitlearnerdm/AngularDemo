@@ -1,0 +1,42 @@
+<div id="headerMenu">
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+                <a class="navbar-brand" routerLink="/home">Angular</a>
+             
+            </div>
+            <div id="navbar" class="collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="/about">About Us</a></li>
+                    <li><a href="/service-dashboard">Services</a></li>
+                    <li><a href="/template-driven-form">Forms</a></li>
+                    <li><a href="/pipe-dashboard">Pipes</a></li>
+                    <li><a href="/examples">Examples</a></li>
+                </ul>
+            </div>
+        </div>
+      </nav>
+</div>
+
+<div class="container bodySpace">
+  <div class="row">
+        <div class="col-md-12">
+            <router-outlet></router-outlet>
+            
+        </div>   
+    </div>
+</div>
+
+<footer class="footer" id="footerMenu">
+  <div class="container">
+      <p class="text-muted"><br>Place sticky footer content here.</p>
+    </div>
+</footer>

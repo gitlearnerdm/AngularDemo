@@ -1,0 +1,105 @@
+<div class="row">
+    <div class="col-md-12">
+		<h1> {{ title }}</h1>
+	</div>
+</div>
+
+<div class="row">
+    <div class="col-md-12">
+		<ul class="list-group">
+		<li class="list-group-item list-group-item-danger">Attribute and properties are not same.</li>
+		</ul>
+	</div>
+</div>
+
+<div class="row">
+	<div class="col-md-6 col-lg-6">
+		<div class="panel panel-info">
+			<div class="panel-heading"> Attribute </div>
+			<div class="panel-body"> 
+				<ul class="list-group">
+                    <li  class="list-group-item">Attribute are defined by HTML</li>
+                    <li  class="list-group-item">Attribute initialize DOM properties and they are done. Attribute values cannnot chnage once they are inilitaized.</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+    <div class="col-md-6 col-lg-6">
+		<div class="panel panel-info">
+			<div class="panel-heading"> Property </div>
+			<div class="panel-body"> 
+				<ul class="list-group">
+                    <li  class="list-group-item">Property are defined by DOM</li>
+					<li  class="list-group-item">Properties can be initialize again and again or changed. </li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="row">
+    <div class="col-md-12">
+		<div class="panel panel-info">
+			<div class="panel-heading"> Example </div>
+			<div class="panel-body"> 
+				<div class="row">
+					<div class="col-md-3 col-lg-3">
+						<div class="panel panel-info">
+							<div class="panel-heading"> Hardcoded value </div>
+								<div class="panel-body"> 
+									<input type="text" value="Dimple">
+									<p>$0.getAttribute('value') will give initialized value and cant be changed</p>
+									<p>$0.value will give property of DOM that can be changes in input</p>
+								</div>
+						</div>
+					</div>
+				
+					<div class="col-md-3 col-lg-3">
+						<div class="panel panel-info">
+							<div class="panel-heading"> Property Binding ID  </div>
+								<div class="panel-body"> 
+									<input type="text" [id]=testId value="Testing and binding this testId property to html property of input element" >
+									<p>Testing and binding this testId property to html property of input element</p>
+								</div>
+						</div>
+						
+					</div>
+
+					<div class="col-md-3 col-lg-3">
+						<div class="panel panel-info">
+							<div class="panel-heading"> Why we need Property binding when we have interpolation?</div>
+								<div class="panel-body"> 
+									<input type="text" disabled=false id={{testId}} value="Interploation works with string only" >
+									<p>even if the disabled is false,we cant chnage input text becoz it takes boolean and interpolation doesnot support boolean</p>
+									<input type="text" [disabled]=false id={{testId}} value="Interploation works with string only" >
+									<p>Disabled is in square brackets [] and value is false, but now we can chnage input text</p>
+								</div>
+						</div>	
+					</div>
+
+					<div class="col-md-3 col-lg-3">
+						<div class="panel panel-info">
+							<div class="panel-heading"> Why we need Property binding when we have interpolation?</div>
+								<div class="panel-body"> 
+									<ul class="list-group">
+										<li class="list-group-item list-group-item-secondary">
+											<p>boolean value defined in Component class</p>
+											<input style="width: 150px;" type="text" [disabled]='isDisabled' id=testId value="Interploation works with string only" >
+											<p>boolean value defined in Component class change to true or false</p>
+										</li>
+										<li class="list-group-item list-group-item-dark">
+											<p>alternate syntax for property binding</p>
+											<input style="width: 150px;" type="text" bind-disabled='notDisabled' id=testId value="Interploation works with string only" >
+											<p>bind-disabled is used and boolean value defined in Component class change to true or false</p>
+										</li>
+									</ul>
+								</div>
+						</div>	
+					</div>
+				
+			</div>
+		</div>
+
+	</div>
+</div>

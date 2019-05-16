@@ -1,0 +1,62 @@
+/* You can add global styles to this file, and also import other style files */
+/* Sticky footer styles -------------------------------------------------- */
+ html {
+     position: relative;
+     min-height: 100%;
+}
+ body {
+    /* Margin bottom by footer height */
+     margin-bottom: 60px;
+     padding-top: 60px;
+     background-color:#ebebeb;
+}
+ .bodySpace{
+     padding-bottom: 20px;
+}
+ h1, h2, h3 {
+     margin-top: 10px;
+     margin-bottom: 15px;
+     color:#004987;
+}
+
+h1{ font-size: 25px;}
+ .navbar-default {
+     background-color: #004987;
+     border-color: #e7e7e7;
+}
+ .navbar-default .navbar-nav>li>a {
+     color: #fff;
+}
+ .navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
+     color: #000;
+     background-color: #d5d5d5;
+}
+ .navbar-default .navbar-nav>li>a:focus span.caret, .navbar-default .navbar-nav>li>a:hover span.caret {
+     border-top-color: #000;
+     border-bottom-color: #000;
+}
+ .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+     color: #000;
+     background-color: #fff;
+}
+ .navbar-default .navbar-brand {
+     color: #fff;
+}
+ .navbar-default .navbar-brand:focus, .navbar-default .navbar-brand:hover {
+     color: #fff;
+     background-color: transparent;
+}
+ .navbar-default .navbar-nav>.dropdown>a .caret{
+     border-top-color: #fff;
+     border-bottom-color: #fff;
+}
+ h1{font-size: 25px;}
+ h2{font-size: 20px;}
+ .footer {
+     position: absolute;
+     bottom: 0;
+     width: 100%;
+    /* Set the fixed height of the footer here */
+     height: 60px;
+     background-color: #000;
+}

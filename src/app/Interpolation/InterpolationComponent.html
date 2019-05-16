@@ -1,0 +1,56 @@
+
+<div class="row">
+	<div class="col-md-12">
+		<h1> {{ title }}</h1>
+        
+    </div>
+</div>
+
+<div class="row">
+	<div class="col-md-12">
+		<div class="panel panel-success">
+			<div class="panel-heading"> Learning Topics </div>
+			<div class="panel-body"> 
+				<h3>Angular Interpolation / String Interpolation</h3>
+                <p>String Interpolation uses template expressions in double curly braces to display data from the component,
+                the special syntax, also known as moustache syntax.The contains JavaScript expression which can be run by Angular and the output will be inserted into the HTML.</p>
+                <p>{{"This content is" + interpolationContent + "optained through Interpolation."}}</p>
+                <p> Say if we put 5 + 5  in the double curly brackets 10 will be inserted into the HTML</p>
+                <p>{{5+5}}</p>
+
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="panel panel-info">
+                                <div class="panel-heading"> Different ways of Interpolation </div>
+                                <div class="panel-body">
+                                    <h4>JavaScript methods in Interpolation</h4>
+                                    <p>length of the Dynamic Content is {{interpolationContent.length}}</p>
+                                    <p>change the case to lowerCase : {{interpolationContent.toLowerCase()}}</p>
+                                    
+                                    <h4>JavaScript function with Interpolation</h4>
+                                        <p class="text-danger">{{InterpolationFunction()}}</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>  
+
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="panel panel-danger">
+                                <div class="panel-heading"> Limitations </div>
+                                <div class="panel-body">
+                                    <ul>
+                                        <li>assignemts are not allowed inside curly braces,it gives parse Error</li>
+                                        <li>It doesent provide acces to global variable i.e template not aware of global Javascript variables like (window.location.href). Insted of that we have to define it in the class and bind it to the Template an it will provide expected result. Example: 
+                                        <p>{{siteUrl}}</p>
+                                        </li> 
+                                        <li>Interpolation works with Sring only thats why we need property binding as values can be boolean or number</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>                             
+			</div>
+		</div>
+	</div>
+</div>

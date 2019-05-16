@@ -1,0 +1,39 @@
+<div class="row">
+	<div class="col-md-12">
+		<h1> {{ title }}</h1>
+        
+    </div>
+</div>	
+		<div class="panel panel-info">
+			<div class="panel-heading"> External Json from .json file</div>
+			<div class="panel-body">  
+				<table *ngIf="arrDetail">
+					<!-- ADD HEADERS -->
+					<tr>
+						<th>ID</th>
+						<th>Name </th>
+						<th>Project</th>
+					</tr>
+
+					<!-- BIND ARRAY TO TABLE -->
+					<tr *ngFor="let detail of arrDetail">
+						<td>{{detail.ID}}</td>
+						<td>{{detail.Name}}</td>
+						<td>{{detail.Project}}</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	
+    <style>
+        table, th, td 
+        {
+            margin: 10px 0;
+            border: solid 1px #333;
+            padding: 2px 4px;
+            font: 15px Verdana;
+        }
+        th {
+            font-weight:bold;
+        }
+    </style>
